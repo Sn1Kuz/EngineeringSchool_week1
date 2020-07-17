@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test_1">
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <MultiAutoCompleteTextView
+            android:id="@+id/AutoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pick an item"
+            android:completionThreshold="2"
+            />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/what_is_MulitiAutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20dp"
+        android:background="@color/light_orange"
+        android:text=""
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/Before"
+            android:text="◀"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            />
+        <Button
+            android:id="@+id/Next"
+            android:text="▶"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/Before"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        >
+        <CheckedTextView
+            android:id="@+id/monsterball_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="MonsterBall"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableLeft="@drawable/monsterball"
+            />
+        <CheckedTextView
+            android:id="@+id/superball_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="SuperBall"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:drawableLeft="@drawable/superball"
+            android:layout_below="@+id/monsterball_check"
+            />
+    </RelativeLayout>
+
+</TableLayout>
