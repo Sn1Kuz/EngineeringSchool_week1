@@ -107,14 +107,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(context, Test_6.class);
                 startActivity(intent);
                 break;
-            case R.id.btn11:
-                intent = new Intent(context, LifeCycleActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn12:
-                intent = new Intent(context, ListActivity.class);
-                startActivity(intent);
-                break;
             default:
                 //이게 지금 MainActivity는 인터페이스를 상속받아서 Toast가 되는거 같음. 다른 곳에서는 안됨(Test_1은 넣었다가 지웠음)
                 Toast.makeText(this, "아직 지정되지 않은 버튼입니다.",Toast.LENGTH_SHORT).show();
