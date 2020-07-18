@@ -28,6 +28,7 @@ public class Test_3 extends AppCompatActivity {
         note = (TextView) findViewById(R.id.explainText);
         next = (Button) findViewById(R.id.Next);
         before = (Button)findViewById(R.id.Before);
+        note.setText(explain[0]);
 
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override

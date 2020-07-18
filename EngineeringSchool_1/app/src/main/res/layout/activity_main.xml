@@ -104,14 +104,15 @@
 
         <Button
             android:id="@+id/btn11"
-            android:text="btn11"
+            android:text="LifeCycle"
             android:layout_weight="1"
             android:layout_width="8dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"/>
 
         <Button
             android:id="@+id/btn12"
-            android:text="btn12"
+            android:text="ListActivity"
             android:layout_weight="1"
             android:layout_width="8dp"
             android:layout_height="wrap_content"/>
