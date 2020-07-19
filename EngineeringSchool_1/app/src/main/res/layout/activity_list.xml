@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,10 +7,31 @@
     android:layout_height="match_parent"
     tools:context=".ListActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/textViewFilter"
+        android:text="Filter Text"
+        android:textColor="@color/light_green"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textViewFilter"
+        android:id="@+id/editTextFilter"
+        />
+
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/listView"
+        android:layout_below="@+id/editTextFilter"
+        android:textFilterEnabled="true"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
